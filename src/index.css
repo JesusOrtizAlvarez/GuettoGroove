@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px theme('colors.primary.DEFAULT'),
+                0 0 20px theme('colors.primary.DEFAULT'),
+                0 0 30px theme('colors.primary.DEFAULT');
+  }
+  to {
+    box-shadow: 0 0 20px theme('colors.primary.DEFAULT'),
+                0 0 30px theme('colors.primary.DEFAULT'),
+                0 0 40px theme('colors.primary.DEFAULT');
+  }
+}
