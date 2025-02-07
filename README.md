@@ -1,7 +1,5 @@
 # Guetto Groove
 
-![Guetto Groove Logo](https://via.placeholder.com/800x200.png?text=Guetto+Groove)
-
 Guetto Groove es una plataforma web dedicada a la organización y promoción de eventos de música techno. Diseñada con un estilo moderno y minimalista, esta aplicación permite a los usuarios explorar próximos eventos, revivir experiencias pasadas y disfrutar del arte del techno.
 
 ---
