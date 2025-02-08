@@ -10,7 +10,7 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background/80 backdrop-blur-sm border-white/10">
-        <nav className="container flex items-center h-20 px-4 mx-auto">
+        <nav className="container flex items-center h-auto px-4 py-4 mx-auto md:h-20">
           {/* Left side - Navigation */}
           <div className="flex items-center space-x-8">
             <Link to="/programacion" className="text-sm tracking-wider uppercase transition-colors text-foreground/80 hover:text-primary">
