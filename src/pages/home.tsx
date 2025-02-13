@@ -111,7 +111,7 @@ export function Home() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-32">
+      <section className="py-16 sm:py-24 lg:py-32">
         <div className="container px-4 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -119,21 +119,21 @@ export function Home() {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-center"
           >
-            <h2 className="mb-6 text-5xl font-bold tracking-tighter font-display md:text-6xl">
+            <h2 className="mb-4 text-4xl font-bold tracking-tighter font-display sm:text-5xl lg:text-6xl lg:mb-6">
               Newsletter
             </h2>
-            <p className="mb-8 tracking-wider uppercase text-foreground/60">
+            <p className="mb-6 text-sm tracking-wider uppercase sm:text-base lg:mb-8 text-foreground/60">
               Suscríbase para recibir actualizaciones exclusivas y acceso de preventa
             </p>
-            <form className="flex gap-4">
+            <form className="flex flex-col w-full gap-3 sm:flex-row sm:gap-4">
               <input
                 type="email"
                 placeholder="YOUR EMAIL"
-                className="flex-1 px-6 py-4 tracking-wider uppercase border-none bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-3 tracking-wider uppercase transition-colors duration-300 border-none sm:px-6 sm:py-4 bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <button
                 type="submit"
-                className="px-8 py-4 tracking-wider text-white uppercase transition-colors duration-300 bg-primary hover:bg-primary/80"
+                className="px-4 py-3 text-sm tracking-wider text-white uppercase transition-colors duration-300 sm:text-base sm:px-8 sm:py-4 bg-primary hover:bg-primary/80"
               >
                 Suscribirse
               </button>
